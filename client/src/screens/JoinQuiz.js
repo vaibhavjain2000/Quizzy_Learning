@@ -9,14 +9,14 @@ const JoinQuiz = () => {
     const handleJoinQuiz = () => {
         if (code.length) setValid('attempt-quiz');
     };
+
     if (valid !== 'false') return <Redirect push to={`/${valid}/${code}`} />;
-    // if (valid === 'join-blind')
-    // 	return <Redirect push to={`attempt-blind-quiz/${code}`} />
+
     return (
         <div id="join-quiz">
             <div id="join-quiz-div">
                 <div className="logo-name">
-                    <b>Quiz</b>iify
+                    <b>Quizzy</b>Learning
                 </div>
                 <input
                     value={code}
