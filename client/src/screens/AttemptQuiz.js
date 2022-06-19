@@ -6,6 +6,7 @@ import AttemptedModal from './AttemptedModal';
 
 const AttemptQuiz = ({ match }) => {
     const quizCode = match.params.quizCode;
+    const [passed, setPassed] = useState(false);
     const [marks, setMarks] = useState(0);
     const [questions, setQuestions] = useState([]);
     const [attemptedQuestions, setAttemptedQuestions] = useState([]);
@@ -96,8 +97,9 @@ const AttemptQuiz = ({ match }) => {
             }
             const pass = body.score / attemptedQuestions.length;
             console.log(pass + ' you got passed');
-            if (pass > 0.6) {
+            if (pass > 0.6 && !passed) {
                 alert('Congratulations you passed the quiz. you can now submit');
+                setPassed(true);
             }
         } catch (e) {
             console.log('Error Submitting quiz', e);

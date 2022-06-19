@@ -14,7 +14,9 @@
 	height: 250px;
 	padding-bottom: 10px;
 }
-
+p {
+	font-size: small;
+}
 .quiz-card:hover {
 	background-color: var(--secondary);
 	transform: scale(1.02);
@@ -41,28 +43,19 @@
 
 #horizontal-line {
 	width: 300px;
-	height: 2px;
+	
 	background-color: var(--primary);
 }
 
 #row {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
 }
 
-#responses {
-	float: left;
-}
 
-#questions {
-	float: right;
-}
 
-#questions,
-#responses {
-	padding: 10px;
-	font-size: 1rem;
-}
 
 #open,
 #closed {
