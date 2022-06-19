@@ -7,11 +7,11 @@ const JoinedQuizCard = ({ title, score, questions }) => {
             <h1 id="created-quiz-title">{title}</h1>
             <div id="horizontal-line"></div>
             <div id="row">
-                <div id="responses">
+                <p id="responses">
                     Score : {score}/{questions}
-                </div>
-                <div id="result">{score / questions > 0.6 ? 'Passed' : 'Fail'}</div>
-                <div id="questions">Questions : {questions}</div>
+                </p>
+                <p id="result">{score / questions > 0.6 ? 'Passed' : 'Fail'}</p>
+                <p id="questions">Questions : {questions}</p>
             </div>
             <div id="open"></div>
         </div>
