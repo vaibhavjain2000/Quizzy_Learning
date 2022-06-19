@@ -2,7 +2,7 @@ const MongoClient = require('mongodb');
 const Db = require('mongodb/lib/db');
 const Evaluate = require('../utils/EvaluateQuiz');
 const ObjectId = require('mongodb').ObjectId;
-const API_KEY = 'mongodb://127.0.0.1:27017/quizApp';
+const API_KEY = process.env.mongo || 'mongodb://127.0.0.1:27017/quizApp';
 let db;
 
 const DBStart = async () => {
