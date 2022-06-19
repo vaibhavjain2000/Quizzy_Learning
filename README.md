@@ -15,11 +15,13 @@ QuizzyLearning is a web application for all kinds of users. Users can simply log
   - The teacher should be able to control the access to quizzes.
   - The teacher should be able to copy and share the quiz - code.
   - The teacher should be able to view/ delete the responses.
+  - The teacher should be able to edit/delete the quiz.
 
 - ### Student
 
   - The student should be able to attempt a quiz by using the quiz code.
   - The student should be able to see their scores in the attempted quizzes.
+  - The student should be able to view all the quizes made by the teacher.
 
 ## 🚀 Configuration Guidlelines
 
